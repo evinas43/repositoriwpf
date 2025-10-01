@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PrimeraInterficieWPF"
         mc:Ignorable="d"
-        Title="primeraApp" Height="450" Width="800">
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="139,0,0,0" TextWrapping="Wrap" Text="tocam" VerticalAlignment="Center" Height="260" Width="221"/>
-    </Grid>
+        Title="Creació Nom" Height="600" Width="525
+        ">
+    <StackPanel>
+        <Label Content="Nom"/>
+        <TextBox Width="520" Height="30" Text="{Binding Path= nom,Mode=TwoWay}"/>
+        <Label Content="Cognom"/>
+        <TextBox Width="520" Height="30" Text="{Binding Path= cognom,Mode=TwoWay}"/>
+        <TextBox Width="520" Height="30" Text="{Binding Path= nom,Mode=TwoWay}"/>
+        <Label Content="Nom complet"/>
+        <TextBox Width="520" Height="30" Text="{Binding Path= nomComplet,Mode=TwoWay}"/>
+    </StackPanel>
 </Window>
